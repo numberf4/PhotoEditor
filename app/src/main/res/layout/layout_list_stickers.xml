@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ucrop_color_bg_confirm_edit">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_sticker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_layout_filter"
+            android:layout_marginHorizontal="@dimen/padding_hrz_recyclerview2"
+            android:background="@color/bg_edit"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/ctl_confirm_add_sticker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:itemCount="2"
+            tools:listitem="@layout/layout_item_sticker" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctl_confirm_add_sticker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ucrop_color_bg_confirm_edit"
+            android:paddingHorizontal="@dimen/padding_layout_horizontal_bottom16"
+            android:paddingVertical="@dimen/padding_layout_confirm_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_cancel_add_sticker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_cancel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_undo_sticker"
+                android:src="@drawable/undo_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_cancel_add_sticker"
+                app:layout_constraintEnd_toStartOf="@id/tv_content_filter"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_content_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_medium"
+                android:lineHeight="@dimen/line_height24"
+                android:text="@string/sticker"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_content_layout_confirm_bottom18"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_redo_sticker"
+                android:src="@drawable/redo_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_content_filter"
+                app:layout_constraintEnd_toStartOf="@id/iv_done_sticker"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_done_sticker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_blue_tick"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

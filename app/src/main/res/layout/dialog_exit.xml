@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_exit"
+    android:paddingHorizontal="@dimen/padding18"
+    android:paddingVertical="@dimen/margin24">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_warning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_content_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_22dp"
+        android:fontFamily="@font/mulish_medium"
+        android:text="@string/exit_warning"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_warning" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cancel"
+        style="@style/styleButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_marginEnd="@dimen/size10dp"
+        android:background="@drawable/bg_button_cancel"
+        android:fontFamily="@font/mulish_medium"
+        android:paddingVertical="@dimen/size10dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text18sp"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_content_warning" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="@dimen/size0dp"
+        android:layout_height="@dimen/size0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_exit"
+        style="@style/styleButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size10dp"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@drawable/bg_button_exit"
+        android:fontFamily="@font/mulish_medium"
+        android:paddingVertical="@dimen/size10dp"
+        android:text="@string/exit"
+        android:textAllCaps="false"
+        android:textColor="@color/color_exit"
+        android:textSize="@dimen/text18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_content_warning" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

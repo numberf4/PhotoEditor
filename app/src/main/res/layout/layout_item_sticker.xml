@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/csl_item_sticker"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="@dimen/ucrop_padding6"
+        android:paddingVertical="8dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/img_sticker"
+            android:layout_width="@dimen/margin60"
+            android:layout_height="@dimen/margin60"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

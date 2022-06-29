@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ucrop_color_bg_confirm_edit">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_sticker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_layout_add_text"
+            android:background="@color/bg_edit"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin4"
+            app:layout_constraintBottom_toTopOf="@id/layout_edit_sticker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:itemCount="2"
+            tools:listitem="@layout/layout_item_sticker" />
+
+        <include
+            android:id="@+id/layout_edit_sticker"
+            layout="@layout/layout_edit_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

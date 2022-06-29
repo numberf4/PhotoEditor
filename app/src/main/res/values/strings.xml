@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">PhotoEditer</string>
+    <string name="splash_text">Editor photo</string>
+    <string name="splash_button">Choose Photo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="grant_access">Grant Access</string>
+    <string name="content_grant_access">Allow to access photos, media and files on your device?</string>
+    <string name="text_allow">Allow</string>
+    <string name="alert_granted_permissions">You can already access the storage!!</string>
+    <string name="alert_denied_permissions">You cannot access the storage!!</string>
+    <string name="get_image_from_device">Get Image From Device</string>
+    <string name="draw">Draw</string>
+    <string name="text">Text</string>
+    <string name="sticker">Sticker</string>
+    <string name="ucrop_menu_crop">Crop</string>
+    <string name="ucrop_mutate_exception_hint" translatable="false">Therefore, override color resource (ucrop_color_toolbar_widget) in your app to make it work on pre-L devices</string>
+    <string name="ucrop_error_input_data_is_absent" translatable="false">Both input and output Uri must be specified</string>
+    <string name="ucrop_label_edit_photo">Edit Photo</string>
+    <string name="ucrop_label_original">Original</string>
+    <string name="free_crop">Free</string>
+    <string name="ucrop_crop">Crop</string>
+    <string name="ucrop_rotate">Rotate</string>
+    <string name="ucrop_scale">Scale</string>
+    <string name="editor_photo">Editor Photo</string>
+    <string name="save">Save</string>
+    <string name="square_crop">Square</string>
+    <string name="filter">Filter</string>
+    <string name="double_tab_to_edit_text">DOUBLE TAB TO EDIT TEXT</string>
+    <string name="add">Add</string>
+    <string name="color">Color</string>
+    <string name="bg_color">BG Color</string>
+    <string name="content_add_text">Add Text</string>
+    <string name="ag_font">Ag</string>
+    <string name="font">Font</string>
+    <string name="select_font">Select Font</string>
+    <string name="text_color">Text Color</string>
+    <string name="background_color">Background Color</string>
+    <string name="alert_not_have_text">Not have text!</string>
+    <string name="size">Size</string>
+    <string name="brush_color">Brush color</string>
+    <string name="brush_size">Brush size</string>
+    <string name="exit_warning">Do you really want to quit?</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit</string>
+    <string name="share">Share</string>
+    <string name="waiting">Waiting......</string>
+    <string name="not_to_blank_text">Not to blank text!</string>
+
+
+</resources>

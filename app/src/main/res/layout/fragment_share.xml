@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_edit"
+        tools:context=".ui.main.share.ShareFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/csl_top_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_confirm_edit"
+            android:paddingVertical="@dimen/margin_22dp"
+            android:paddingStart="@dimen/padding16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_back_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/size10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:src="@drawable/white_back_arrow_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_medium"
+                android:text="@string/share"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_share"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0dp"
+            android:layout_marginBottom="@dimen/padding42"
+            app:layout_constraintBottom_toTopOf="@id/btn_share"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/csl_top_share" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_share"
+            android:layout_width="@dimen/size0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin60"
+            android:layout_marginBottom="@dimen/padding52"
+            android:background="@drawable/bg_button_share"
+            android:fontFamily="@font/mulish_medium"
+            android:paddingHorizontal="@dimen/padding_50"
+            android:paddingVertical="@dimen/margin_12dp"
+            android:text="@string/share"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text24"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

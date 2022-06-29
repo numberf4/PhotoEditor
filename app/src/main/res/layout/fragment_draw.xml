@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/csl_draw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/csl_option_draw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_layout_add_text"
+            android:background="@color/bg_edit"
+            app:layout_constraintBottom_toTopOf="@id/layout_edit_sticker">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_color_draw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_edit_color_text"
+                android:fontFamily="@font/mulish_medium"
+                android:paddingHorizontal="@dimen/size10dp"
+                android:text="@string/color"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text14"
+                android:textStyle="normal"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tv_size_draw"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_size_draw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_size"
+                android:fontFamily="@font/mulish_medium"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="@dimen/size10dp"
+                android:text="@string/size"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text14"
+                android:textStyle="normal"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_color_draw"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/layout_edit_sticker"
+            layout="@layout/layout_edit_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

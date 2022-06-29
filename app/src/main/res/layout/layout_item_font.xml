@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/csl_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_edit"
+        android:padding="@dimen/margin_12dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_item_ag_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ag_font"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/mulish_medium"
+            android:layout_marginBottom="@dimen/margin4"
+            app:layout_constraintBottom_toTopOf="@id/tv_font"
+            android:textSize="@dimen/text_size_item_font"
+            app:layout_constraintStart_toStartOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_font"
+            android:fontFamily="@font/mulish_medium"
+            android:text="@string/font"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav.xml"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.photoediter.ui.main.splash.SplashFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.photoediter.ui.main.home.HomeFragment"
+        />
+    <fragment
+        android:id="@+id/ucropFragment"
+        android:name="com.yalantis.ucrop.UCropFragment"
+        />
+    <fragment
+        android:id="@+id/shareFragment"
+        android:name="com.example.photoediter.ui.main.share.ShareFragment"/>
+</navigation>

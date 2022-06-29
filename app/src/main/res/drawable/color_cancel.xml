@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="@dimen/size24dp" android:width="@dimen/size24dp"/>
+            <solid android:color="@color/colorWhite"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_baseline_block24"  />
+
+</layer-list>

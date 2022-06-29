@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_edit">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_layout_add_text"
+            app:layout_constraintBottom_toTopOf="@id/layout_edit_text"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_brush_size1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_brush_size1"
+                android:paddingHorizontal="@dimen/ucrop_padding10"
+                android:paddingTop="@dimen/margin24"
+                app:layout_constraintBottom_toBottomOf="@id/iv_brush_size7"
+                app:layout_constraintEnd_toStartOf="@id/iv_brush_size2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_brush_size2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_pick_brush_size2"
+                android:paddingHorizontal="@dimen/margin_normal_extra_5dp"
+                android:paddingTop="@dimen/margin24"
+                app:layout_constraintBottom_toBottomOf="@id/iv_brush_size7"
+                app:layout_constraintEnd_toStartOf="@id/iv_brush_size3"
+                app:layout_constraintStart_toEndOf="@id/iv_brush_size1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_brush_size3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_brush_size3"
+                android:paddingHorizontal="@dimen/margin_normal_extra_5dp"
+                android:paddingTop="@dimen/ucrop_padding10"
+                app:layout_constraintBottom_toBottomOf="@id/iv_brush_size7"
+                app:layout_constraintEnd_toStartOf="@id/iv_brush_size4"
+                app:layout_constraintStart_toEndOf="@id/iv_brush_size2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_brush_size4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_brush_size4"
+                android:paddingHorizontal="@dimen/margin_normal_extra_5dp"
+                android:paddingTop="@dimen/margin_normal_extra_5dp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_brush_size7"
+                app:layout_constraintEnd_toStartOf="@id/iv_brush_size5"
+                app:layout_constraintStart_toEndOf="@id/iv_brush_size3" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_brush_size5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_brush_size5"
+                android:paddingHorizontal="@dimen/margin_normal_extra_5dp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_brush_size7"
+                app:layout_constraintEnd_toStartOf="@id/iv_brush_size6"
+                app:layout_constraintStart_toEndOf="@id/iv_brush_size4" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_brush_size6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_brush_size6"
+                android:paddingHorizontal="@dimen/margin_normal_extra_5dp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_brush_size7"
+                app:layout_constraintEnd_toStartOf="@id/iv_brush_size7"
+                app:layout_constraintStart_toEndOf="@id/iv_brush_size5" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_brush_size7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/margin_normal_extra_5dp"
+                android:layout_marginVertical="@dimen/margin_12dp"
+                android:src="@drawable/ic_brush_size7"
+                android:paddingEnd="@dimen/margin_normal_extra_5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_brush_size6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/layout_edit_text"
+            layout="@layout/layout_edit_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/splash_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_background"
+        tools:context=".ui.main.splash.SplashFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_12dp"
+            android:src="@drawable/icon_editer_photo"
+            app:layout_constraintBottom_toTopOf="@id/tv_splash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_medium"
+            android:text="@string/splash_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_splash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_62dp"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:background="@drawable/background_button_splash"
+            android:paddingVertical="@dimen/margin_normal"
+            android:text="@string/splash_button"
+            android:textAllCaps="false"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/text15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_splash" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

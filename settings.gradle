@@ -1,0 +1,6 @@
+
+rootProject.name = "PhotoEditer"
+include ':app'
+include ':sticker'
+include ':jsfilter'
+include ':ucrop'

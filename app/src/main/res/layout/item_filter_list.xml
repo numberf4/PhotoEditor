@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="thumbnail"
+            type="com.filter.helper.MagicFilterType" />
+        <variable
+            name="viewModel"
+            type="com.example.photoediter.ui.main.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctl_icon_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_edit"
+        android:padding="@dimen/padding_horizontal_icon_recyclerview_filter">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_Filter_avt"
+            android:layout_width="@dimen/width_icon_filter"
+            android:layout_height="@dimen/height_icon_filter"
+            android:scaleType="centerInside"
+            android:padding="@dimen/padding_image_filter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_filter"
+            android:layout_width="@dimen/width_icon_filter"
+            android:layout_height="@dimen/height_icon_filter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/mulish_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_item_filter"
+            android:gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_Filter_avt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

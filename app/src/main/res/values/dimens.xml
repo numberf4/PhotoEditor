@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_circle_image">46dp</dimen>
+    //sp
+    <dimen name="text15sp">15sp</dimen>
+    <dimen name="text18sp">18sp</dimen>
+    <dimen name="text20">20sp</dimen>
+    <dimen name="text28">28sp</dimen>
+    <dimen name="text36sp">36sp</dimen>
+    //dp
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_normal_extra_5dp">5dp</dimen>
+    <dimen name="margin24">24dp</dimen>
+    <dimen name="padding28">28dp</dimen>
+    <dimen name="margin36">36dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_62dp">62dp</dimen>
+    <dimen name="padding52">52dp</dimen>
+    <dimen name="padding8">8dp</dimen>
+    <dimen name="padding16">16dp</dimen>
+    <dimen name="padding_confirm_edit_top">18dp</dimen>
+    <dimen name="text14">14sp</dimen>
+    <dimen name="line_height24">24dp</dimen>
+    //uCrop
+    <dimen name="ucrop_size_dot_scale_text_view">8dp</dimen>
+    <dimen name="ucrop_height_horizontal_wheel_progress_line">1dp</dimen>
+    <dimen name="ucrop_width_horizontal_wheel_progress_line">1dp</dimen>
+    <dimen name="ucrop_height_horizontal_wheel_progress_line_mid">2dp</dimen>
+    <dimen name="ucrop_margin_horizontal_wheel_progress_line">8dp</dimen>
+    <dimen name="ucrop_width_middle_wheel_progress_line">4dp</dimen>
+    <dimen name="ucrop_default_crop_rect_corner_touch_threshold">30dp</dimen>
+    <dimen name="ucrop_default_crop_rect_min_size">400dp</dimen>
+    <dimen name="ucrop_default_crop_rect_corner_touch_area_line_length">10dp</dimen>
+    <dimen name="ucrop_default_crop_frame_stoke_width">1dp</dimen>
+    <color name="ucrop_color_default_crop_frame">#ffffff</color>
+    <dimen name="ucrop_default_crop_grid_stoke_width">1dp</dimen>
+    <color name="ucrop_color_default_crop_grid">#80ffffff</color>
+    <dimen name="ucrop_default_crop_logo_size">200dp</dimen>
+    <dimen name="ucrop_height_wrapper_controls">80dp</dimen>
+    <dimen name="ucrop_height_wrapper_states">60dp</dimen>
+    <dimen name="ucrop_padding_crop_frame">16dp</dimen>
+
+    <dimen name="ucrop_margin_top_widget_text">10dp</dimen>
+    <dimen name="ucrop_text_size_widget_text">13sp</dimen>
+    <dimen name="ucrop_text_size_controls_text">15sp</dimen>
+    <dimen name="ucrop_size_wrapper_rotate_button">50dp</dimen>
+    <dimen name="ucrop_progress_size">30dp</dimen>
+    <dimen name="padding_start_confirm_edit_top">16dp</dimen>
+    <dimen name="padding_end_confirm_edit_top">8dp</dimen>
+    <dimen name="padding_button_save">14dp</dimen>
+    <dimen name="padding_vertical_button_save">3dp</dimen>
+    <dimen name="size0dp">0dp</dimen>
+    <dimen name="size10dp">10dp</dimen>
+    <dimen name="margin_aspect_ratio">2dp</dimen>
+    <dimen name="text_size_button_save_edit">18sp</dimen>
+    <dimen name="margin_photo16">16dp</dimen>
+    <dimen name="radius_bg_progress">20dp</dimen>
+    <dimen name="padding_layout_confirm_bottom">8dp</dimen>
+    <dimen name="padding_layout_horizontal_bottom16">16dp</dimen>
+    <dimen name="size_content_layout_confirm_bottom18">18sp</dimen>
+    <dimen name="padding_horizontal_icon_recyclerview_filter">4dp</dimen>
+    <dimen name="padding_vertical_icon_recyclerview_filter">4dp</dimen>
+    <dimen name="width_icon_filter">60dp</dimen>
+    <dimen name="height_icon_filter">60dp</dimen>
+    <dimen name="text_item_filter">12sp</dimen>
+    <dimen name="padding_hrz_recyclerview2">2dp</dimen>
+    <dimen name="radius_icon_filter6">6dp</dimen>
+    <dimen name="padding_image_filter">3dp</dimen>
+    <dimen name="text_size40px">40px</dimen>
+    <dimen name="size24dp">24dp</dimen>
+    <dimen name="height_layout_filter">90dp</dimen>
+    <dimen name="height_layout_add_text">76dp</dimen>
+    <dimen name="input_add_text">48sp</dimen>
+    <dimen name="padding_drawable_input_text20">20dp</dimen>
+    <dimen name="text_size_item_font">24sp</dimen>
+    <dimen name="margin4">4dp</dimen>
+    <dimen name="width_icon_color_text">46dp</dimen>
+    <dimen name="margin7dp">7dp</dimen>
+    <dimen name="padding_brush_size">2dp</dimen>
+    <dimen name="height_layout_confirm_edit_top">68dp</dimen>
+    <dimen name="padding18">18dp</dimen>
+    <dimen name="margin_22dp">22dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="text24">24sp</dimen>
+    <dimen name="padding_50">50dp</dimen>
+    <dimen name="margin60">60dp</dimen>
+    <dimen name="padding42">42dp</dimen>
+    <dimen name="padding14">14dp</dimen>
+    <dimen name="padding3">3dp</dimen>
+    <dimen name="padding12">12dp</dimen>
+    <dimen name="padding_item_sticker3">3dp</dimen>
+    <dimen name="padding20">20dp</dimen>
+
+
+</resources>
